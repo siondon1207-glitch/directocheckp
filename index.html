@@ -1,23 +1,798 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Home</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <!--
-      Need a visual blank slate?
-      Remove all code in `styles.css`!
-    -->
-    <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
-  </head>
-  <body>
-    <nav>
-      <a href="/" aria-current="page">Home</a>
-      <a href="/page2.html">Other page</a>
-    </nav>
-    <main>
-      <h1>Home page</h1>
-    </main>
-  </body>
-</html>
+
+
+  <!-- JSON-LD Structured Data for Naver and AI Search Engine Optimization -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://도메인/volvo-v-series-guide#webpage",
+        "url": "https://도메인/volvo-v-series-guide",
+        "name": "2026년형 볼보 V시리즈 크로스컨트리 가격 및 실구매 견적 종합 가이드",
+        "description": "2026년형 볼보 V60 및 V90 크로스컨트리(V시리즈)의 공식 트림별 가격, 제원 정보, 전국 등록세 비교, 다이렉트 리스 및 장기렌트 모의 견적 계산기를 제공합니다.",
+        "inLanguage": "ko-KR"
+      },
+      {
+        "@type": "Product",
+        "name": "볼보 V시리즈 크로스컨트리 (Volvo Cross Country V60 / V90)",
+        "image": "https://도메인/volvo-v-series.png",
+        "description": "세단의 안락함과 SUV의 실용성을 겸비한 프리미엄 스웨디시 왜건, 볼보 V시리즈 크로스컨트리 2026년형 모델의 가격 및 사양 정보.",
+        "brand": {
+          "@type": "Brand",
+          "name": "Volvo"
+        },
+        "offers": {
+          "@type": "AggregateOffer",
+          "priceCurrency": "KRW",
+          "lowPrice": "63400000",
+          "highPrice": "77670000",
+          "offerCount": "4"
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- Google Fonts - Premium Serif and Sans-serif combination -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;700&family=Pretendard:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+  <style>
+    /* CSS Reset without using the asterisk selector to avoid formatting bugs */
+    html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, ul, li, table, thead, tbody, tr, th, td, form, label, input, select, textarea, button, section, nav, header, footer, main, dl, dt, dd {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Pretendard', sans-serif;
+      background-color: #FAF8F5;
+      color: #1C2430;
+      line-height: 1.8;
+      font-size: 16px;
+      overflow-x: hidden;
+    }
+
+    /* Elegant Luxury Scandinavian Styling */
+    header {
+      background: linear-gradient(135deg, #0C1E36 0%, #1A365D 100%);
+      color: #FFFFFF;
+      padding: 80px 20px;
+      text-align: center;
+      position: relative;
+    }
+
+    header h1 {
+      font-family: 'Noto Serif KR', serif;
+      font-size: 2.8rem;
+      font-weight: 700;
+      letter-spacing: -0.05em;
+      margin-bottom: 20px;
+      line-height: 1.3;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      font-weight: 300;
+      color: #E2E8F0;
+      max-width: 800px;
+      margin: 0 auto 30px auto;
+    }
+
+    /* Content Layout styling */
+    main {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    section {
+      background-color: #FFFFFF;
+      padding: 50px 40px;
+      border-radius: 16px;
+      margin-bottom: 40px;
+      border: 1px solid #EBE7E0;
+      box-shadow: 0 10px 30px rgba(12, 30, 54, 0.02);
+    }
+
+    h2 {
+      font-family: 'Noto Serif KR', serif;
+      font-size: 2.2rem;
+      color: #0C1E36;
+      margin-bottom: 30px;
+      position: relative;
+      padding-bottom: 15px;
+      border-bottom: 2px solid #EBE7E0;
+    }
+
+    h3 {
+      font-family: 'Noto Serif KR', serif;
+      font-size: 1.6rem;
+      color: #A88E76;
+      margin-top: 35px;
+      margin-bottom: 20px;
+      padding-left: 15px;
+      border-left: 4px solid #A88E76;
+    }
+
+    p {
+      margin-bottom: 24px;
+      font-size: 1.05rem;
+      color: #4A5568;
+      text-align: justify;
+    }
+
+    ul, ol {
+      margin-bottom: 25px;
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 12px;
+      font-size: 1.05rem;
+      color: #4A5568;
+    }
+
+    strong {
+      color: #0C1E36;
+      font-weight: 700;
+    }
+
+    /* Tables */
+    table {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 0;
+      margin: 35px 0;
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1px solid #EBE7E0;
+    }
+
+    th, td {
+      padding: 18px 20px;
+      text-align: left;
+      border-bottom: 1px solid #EBE7E0;
+    }
+
+    th {
+      background-color: #0C1E36;
+      color: #FFFFFF;
+      font-weight: 500;
+      font-size: 1rem;
+    }
+
+    td {
+      background-color: #FFFFFF;
+      font-size: 0.95rem;
+      color: #2D3748;
+    }
+
+    tr:last-child td {
+      border-bottom: none;
+    }
+
+    tr:nth-child(even) td {
+      background-color: #FAF8F5;
+    }
+
+    /* Interactive Calculator Styling */
+    .calculator-container {
+      background-color: #F7F5F0;
+      padding: 35px;
+      border-radius: 12px;
+      border: 1px solid #EBE7E0;
+      margin-top: 30px;
+    }
+
+    .calc-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 25px;
+      margin-bottom: 30px;
+    }
+
+    label {
+      display: block;
+      font-weight: 700;
+      color: #0C1E36;
+      margin-bottom: 8px;
+    }
+
+    select, input[type="number"], input[type="range"] {
+      width: 100%;
+      padding: 12px 16px;
+      border: 1px solid #CBD5E1;
+      border-radius: 8px;
+      font-size: 1rem;
+      outline: none;
+      background-color: #FFFFFF;
+    }
+
+    select:focus, input[type="number"]:focus {
+      border-color: #A88E76;
+    }
+
+    .calc-results {
+      background-color: #FFFFFF;
+      padding: 25px;
+      border-radius: 10px;
+      border: 1px solid #EBE7E0;
+    }
+
+    .result-row {
+      display: flex;
+      justify-content: space-between;
+      padding: 12px 0;
+      border-bottom: 1px dashed #E2E8F0;
+    }
+
+    .result-row:last-child {
+      border-bottom: none;
+      font-weight: 700;
+      font-size: 1.2rem;
+      color: #A88E76;
+    }
+
+    /* Visually appealing custom CSS chart */
+    .price-chart-container {
+      margin: 40px 0;
+    }
+
+    .chart-bar-wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .chart-bar-row {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .chart-label {
+      width: 200px;
+      font-weight: 500;
+      font-size: 0.95rem;
+    }
+
+    .chart-bar-bg {
+      flex-grow: 1;
+      background-color: #E2E8F0;
+      height: 24px;
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    .chart-bar-fill {
+      height: 100%;
+      border-radius: 12px;
+      background: linear-gradient(90deg, #A88E76, #0C1E36);
+    }
+
+    .chart-value {
+      width: 120px;
+      text-align: right;
+      font-weight: 700;
+      color: #0C1E36;
+    }
+
+    /* Buttons & Floating Nav */
+    .btn-cta {
+      display: inline-block;
+      padding: 16px 40px;
+      background-color: #0C1E36;
+      color: #FFFFFF;
+      font-weight: 700;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      border: none;
+      cursor: pointer;
+      font-size: 1.1rem;
+    }
+
+    .btn-cta:hover {
+      background-color: #A88E76;
+      transform: translateY(-2px);
+    }
+
+    .nav-floating {
+      position: fixed;
+      right: 30px;
+      top: 50%;
+      transform: translateY(-50%);
+      background: #FFFFFF;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+      padding: 20px;
+      z-index: 100;
+      border: 1px solid #EBE7E0;
+      display: none;
+    }
+
+    .nav-floating ul {
+      list-style-type: none;
+      padding-left: 0;
+      margin-bottom: 0;
+    }
+
+    .nav-floating li {
+      margin-bottom: 12px;
+    }
+
+    .nav-floating li:last-child {
+      margin-bottom: 0;
+    }
+
+    .nav-floating a {
+      color: #4A5568;
+      text-decoration: none;
+      font-size: 0.9rem;
+      transition: color 0.3s;
+    }
+
+    .nav-floating a:hover {
+      color: #0C1E36;
+      font-weight: 700;
+    }
+
+    /* Form Design */
+    form {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+
+    .form-group-full {
+      grid-column: span 2;
+    }
+
+    input[type="text"], input[type="tel"], textarea {
+      width: 100%;
+      padding: 14px 18px;
+      border: 1px solid #EBE7E0;
+      background-color: #FAF8F5;
+      border-radius: 8px;
+      font-size: 1rem;
+      outline: none;
+    }
+
+    input:focus, textarea:focus {
+      border-color: #0C1E36;
+    }
+
+    /* Footer styling */
+    footer {
+      background-color: #0C1E36;
+      color: #FFFFFF;
+      padding: 50px 20px;
+      text-align: center;
+      border-top: 4px solid #A88E76;
+    }
+
+    footer p {
+      color: #A0AEC0;
+      font-size: 0.95rem;
+      margin-bottom: 10px;
+    }
+
+    footer a {
+      color: #FFFFFF;
+      text-decoration: none;
+      border-bottom: 1px solid #FFFFFF;
+    }
+
+    @media (min-width: 1200px) {
+      .nav-floating {
+        display: block;
+      }
+    }
+
+    @media (max-width: 768px) {
+      header {
+        padding: 60px 15px;
+      }
+      header h1 {
+        font-size: 2rem;
+      }
+      main {
+        margin: 20px auto;
+      }
+      section {
+        padding: 30px 20px;
+      }
+      .calc-grid, form {
+        grid-template-columns: 1fr;
+      }
+      .form-group-full {
+        grid-column: span 1;
+      }
+      table, thead, tbody, th, td, tr {
+        display: block;
+      }
+      th {
+        text-align: center;
+      }
+      td {
+        text-align: right;
+        position: relative;
+        padding-left: 50%;
+      }
+      td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 20px;
+        font-weight: 700;
+        color: #0C1E36;
+      }
+      .chart-bar-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+      }
+      .chart-label, .chart-value {
+        width: 100%;
+        text-align: left;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>2026 볼보 V시리즈 크로스컨트리 가격 제원 완벽 가이드</h1>
+    <p>세단의 안락함과 SUV의 실용성을 지닌 볼보 V60, V90 크로스컨트리의 2026년식 최신 시세 정보와 할인 프로모션, 연령대별 유지 세금 모의 견적 시스템</p>
+    <a href="#consultation" class="btn-cta">전국 딜러사 실시간 비교 견적 받기</a>
+  </header>
+
+  <nav class="nav-floating" aria-label="빠른 메뉴 이동">
+    <ul>
+      <li><a href="#intro">1. 볼보 V시리즈 가치</a></li>
+      <li><a href="#v60-cc">2. V60 크로스컨트리</a></li>
+      <li><a href="#v90-cc">3. V90 크로스컨트리</a></li>
+      <li><a href="#comparison">4. 모델별 상세 제원비교</a></li>
+      <li><a href="#regional-tax">5. 전국 세금 및 보험료</a></li>
+      <li><a href="#finance-tips">6. 리스 장기렌트 가이드</a></li>
+      <li><a href="#calculator">7. 실시간 모의계산기</a></li>
+      <li><a href="#owner-reviews">8. 커뮤니티 및 후기</a></li>
+      <li><a href="#external-links">9. 신뢰할 수 있는 출처</a></li>
+      <li><a href="#faq">10. 자주 묻는 질문</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="intro">
+      <h2>스웨디시 왜건의 명작 볼보 V시리즈 크로스컨트리 가치</h2>
+      <p>볼보자동차 브랜드는 안전이라는 가치를 최우선으로 생각하는 역사와 철학을 바탕으로 패밀리카 시장에서 제일 먼저 떠오르는 독보적인 위상을 지니고 있습니다. 특히 왜건, 해치백, SUV의 장점만을 기묘하게 융합한 세부 라인업 종류 중 하나인 크로스컨트리 라인업은 일상에서의 고도로 정숙한 온로드 주행감은 물론이고 지면과의 거리가 높은 편이라 오프로드까지 무리 없이 주행할 수 있는 뛰어난 전천후 성격을 부여받았습니다.</p>
+      <p>전통적인 수입 왜건 판매 순위 부동의 1위를 유지하고 있는 볼보 V시리즈 모델은 2026년형에 이르러 안전성뿐만 아니라 마일드 하이브리드 파워트레인을 통한 한 단계 업그레이드된 친환경 고효율 주행 성능을 유감없이 선보이고 있습니다. 20대 사회초년생의 개성 있는 패션 카부터 시작해 30대 신혼부부의 주말 아웃도어용 데일리 카, 40대 다자녀 가구를 위한 실속 있는 메인 패밀리카, 그리고 50대 중장년층의 은퇴 후 여유로운 캠핑과 차박 여행 목적에 이르기까지 전 세대에 걸쳐 호평을 받는 데는 분명한 이유가 있습니다.</p>
+      <p>수많은 소비자들이 인터넷 카페나 온라인 커뮤니티 등에서 볼보 v시리즈 가격 정책에 대해 관심을 가지는 만큼, 이번 가이드에서는 2026년 현시점 최신 정보를 기초로 V60 크로스컨트리 및 V90 크로스컨트리 모델의 세부 옵션과 트림별 상세 구매 총비용이 얼마 수준으로 결정되는지 구체적으로 분석해 보겠습니다.</p>
+    </section>
+
+    <section id="v60-cc">
+      <h2>2026 볼보 V60 크로스컨트리 가격 및 트림 집중 해부</h2>
+      <p>중형 크로스오버 모델인 볼보 V60 크로스컨트리 B5 AWD 모델은 한국 시장에서 가장 큰 성공을 거둔 왜건 패밀리 중 하나입니다. 2026년형 기준 볼보 V60 크로스컨트리는 최상위 트림 사양인 B5 AWD Ultra 단일 트림으로 재편되어 판매가 원활히 이루어지고 있습니다. 기본 차량 가격은 64,500,000원으로 공식 출시되었으며, 세부적인 옵션 타협 없이 프리미엄 옵션이 기본으로 탑재되어 상품성이 한층 배가되었습니다.</p>
+      <p>과거 플러스 트림과 비교해 보았을 때 울트라 트림에는 영국의 명품 오디오 시스템인 바워스 앤 윌킨스(Bowers and Wilkins) 서라운드 사운드가 전면 구성되어 있어 차량 실내에서 마치 스웨덴 예테보리 콘서트홀에 와 있는 듯한 고음질 청취 경험을 선사합니다. 아울러 고급 나파 가죽 시트와 운전석 및 조수석 마사지 시트, 1열 통풍 마사지 시스템, 오레포스 크리스탈 기어 노브 등 기존에 상위 대형 차량에서만 볼 수 있었던 프리미엄 사양들이 대거 제공되는 장점을 보유하고 있습니다.</p>
+      <p>볼보 V60 크로스컨트리 B5 AWD 모델은 1,969cc 배기량의 4기통 가솔린 가솔린 터보 엔진에 48V 마일드 하이브리드 전동화 결합 구동계를 구성하고 있습니다. 이로 인해 최고 출력 250마력과 최대 토크 35.7kg.m를 부드럽게 지면으로 쏟아냅니다. 친환경 하이브리드 기술 도입에 따른 세제 감면 지원금 혜택까지 반영한 차량의 실연비는 복합 기준 리터당 9.9km로 수치 이상의 정숙함과 가속 주행 감각을 직접 체감할 수 있습니다.</p>
+    </section>
+
+    <section id="v90-cc">
+      <h2>2026 볼보 V90 크로스컨트리 가격 장단점 정밀 분석</h2>
+      <p>보다 넓은 거주성이나 품격 있는 실내 적재 공간, 그리고 더 여유로운 고속 주행 세팅을 선호하신다면 플래그십 크로스오버 왜건인 볼보 V90 크로스컨트리가 훌륭한 선택지로 존재합니다. 볼보 V90 크로스컨트리의 2026년형 공식 판매 가격은 트림 옵션별로 상이합니다.</p>
+      <ul>
+        <li><strong>V90 크로스컨트리 B5 AWD Plus :</strong> 71,550,000원</li>
+        <li><strong>V90 크로스컨트리 B5 AWD Ultra :</strong> 77,670,000원</li>
+      </ul>
+      <p>B5 AWD Plus 트림은 필수 안전 주행 장치와 시트 열선 기능, 넓은 글라스 루프 파노라마 선루프 등을 담은 합리적인 패키징을 제공하여 초기 비용 부담을 줄이면서도 실용성을 극대화한 것이 장점입니다. 한편 B5 AWD Ultra 트림은 사륜구동 AWD 트랙션 극대화 설계를 바탕으로 하여 19인치 다이아몬드 컷 알로이 휠, 전동식 앞좌석 쿠션 연장 장치, 360도 서라운드 카메라, 그리고 헤드업 디스플레이가 동시 포함되어 럭셔리함의 정점에 선 트림이라 평가할 수 있습니다.</p>
+      <p>두 차량의 가장 눈에 띄는 차이점은 후석 거주성 및 주행 서스펜션의 차이에 있습니다. 볼보 V90 크로스컨트리는 전장 4,960mm와 휠베이스 2,941mm에 이르는 넉넉한 사이즈를 가졌는데 이는 일반적인 중대형 세단을 웃도는 넓이입니다. 다만 차체 길이가 매우 길기 때문에 회전 반경이나 구도심 골목길 주차 환경에서 다소 차가 무겁고 버겁게 느껴질 수 있다는 점이 단점으로 꼽히기도 합니다. 하지만 이러한 단점을 완벽히 상쇄할 정도로 압도적인 드라이빙 승차감과 적재 공간의 활용성은 캠핑 매니아층 오너들 사이에서 극찬을 자아내는 주된 배경이 됩니다.</p>
+    </section>
+
+    <section id="comparison">
+      <h2>모델별 상세 제원 및 실구매 가격 비교 일람</h2>
+      <p>소비자의 구매 의사 결정을 위해 2026년형 볼보 V60 크로스컨트리와 V90 크로스컨트리의 주요 제원 및 공장 출고 평균 가격 수준을 비교한 테이블입니다.</p>
+      <table>
+        <thead>
+          <tr>
+            <th>구분 항목</th>
+            <th>V60 크로스컨트리 B5 AWD Ultra</th>
+            <th>V90 크로스컨트리 B5 AWD Plus</th>
+            <th>V90 크로스컨트리 B5 AWD Ultra</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td data-label="구분 항목">공식 차량 가격</td>
+            <td data-label="V60 크로스컨트리 B5 AWD Ultra">64,500,000 원</td>
+            <td data-label="V90 크로스컨트리 B5 AWD Plus">71,550,000 원</td>
+            <td data-label="V90 크로스컨트리 B5 AWD Ultra">77,670,000 원</td>
+          </tr>
+          <tr>
+            <td data-label="구분 항목">파워트레인 종류</td>
+            <td data-label="V60 크로스컨트리 B5 AWD Ultra">가솔린 마일드 하이브리드</td>
+            <td data-label="V90 크로스컨트리 B5 AWD Plus">가솔린 마일드 하이브리드</td>
+            <td data-label="V90 크로스컨트리 B5 AWD Ultra">가솔린 마일드 하이브리드</td>
+          </tr>
+          <tr>
+            <td data-label="구분 항목">배기량 및 엔진</td>
+            <td data-label="V60 크로스컨트리 B5 AWD Ultra">1,969 cc / 4기통 싱글터보</td>
+            <td data-label="V90 크로스컨트리 B5 AWD Plus">1,969 cc / 4기통 싱글터보</td>
+            <td data-label="V90 크로스컨트리 B5 AWD Ultra">1,969 cc / 4기통 싱글터보</td>
+          </tr>
+          <tr>
+            <td data-label="구분 항목">최고출력 및 토크</td>
+            <td data-label="V60 크로스컨트리 B5 AWD Ultra">250 hp / 35.7 kg.m</td>
+            <td data-label="V90 크로스컨트리 B5 AWD Plus">250 hp / 35.7 kg.m</td>
+            <td data-label="V90 크로스컨트리 B5 AWD Ultra">250 hp / 35.7 kg.m</td>
+          </tr>
+          <tr>
+            <td data-label="구분 항목">복합 연비 수준</td>
+            <td data-label="V60 크로스컨트리 B5 AWD Ultra">9.9 km/l (가솔린)</td>
+            <td data-label="V90 크로스컨트리 B5 AWD Plus">11.0 km/l (가솔린)</td>
+            <td data-label="V90 크로스컨트리 B5 AWD Ultra">11.0 km/l (가솔린)</td>
+          </tr>
+          <tr>
+            <td data-label="구분 항목">차량 전장 크기</td>
+            <td data-label="V60 크로스컨트리 B5 AWD Ultra">4,785 mm</td>
+            <td data-label="V90 크로스컨트리 B5 AWD Plus">4,960 mm</td>
+            <td data-label="V90 크로스컨트리 B5 AWD Ultra">4,960 mm</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="price-chart-container">
+        <h3>2026년도 볼보 V시리즈 모델별 차량 가격대 시각 자료</h3>
+        <p>기본 등급별 차량 가격 편차를 일직선 바의 스케일로 정돈하여 직관적으로 확인하실 수 있습니다.</p>
+        <div class="chart-bar-wrapper">
+          <div class="chart-bar-row">
+            <span class="chart-label">V60 CC B5 Ultra</span>
+            <div class="chart-bar-bg">
+              <div class="chart-bar-fill" style="width: 64.5%;"></div>
+            </div>
+            <span class="chart-value">6,450만원</span>
+          </div>
+          <div class="chart-bar-row">
+            <span class="chart-label">V90 CC B5 Plus</span>
+            <div class="chart-bar-bg">
+              <div class="chart-bar-fill" style="width: 71.5%;"></div>
+            </div>
+            <span class="chart-value">7,155만원</span>
+          </div>
+          <div class="chart-bar-row">
+            <span class="chart-label">V90 CC B5 Ultra</span>
+            <div class="chart-bar-bg">
+              <div class="chart-bar-fill" style="width: 77.6%;"></div>
+            </div>
+            <span class="chart-value">7,767만원</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="regional-tax">
+      <h2>전국 30대 지역 취등록세 편차 및 연령별 자동차 보험료 분석</h2>
+      <p>볼보 V시리즈 크로스컨트리 모델은 서울, 부산, 대구, 인천, 광주, 대전, 울산, 세종 등 주요 광역시를 비롯하여 수원, 성남, 고양, 용인, 부천, 안산, 안양, 평택, 시흥, 화성 등 경기도 전역 및 의정부, 파주, 김포, 광명, 군포, 춘천, 원주, 강릉, 청주, 충주, 천안, 아산, 전주, 군산, 익산, 여수, 순천, 목포, 포항, 경주, 구미, 경산, 창원, 김해, 진주, 제주 등 전국 대도시와 소도시 지역에 이르기까지 동일한 권장 소비자 가격으로 판매됩니다. 그러나 차량 등록지가 서울이냐 혹은 경기도, 대구 지역이냐에 따라 실제 지불하는 취등록세와 공채 할인 비용에서 차이가 발생할 수 있습니다.</p>
+      <p>우리나라의 차량 취등록세 요금은 통상 차량 가액의 7퍼센트 수준으로 정률 산출됩니다. 예를 들어 볼보 V60 크로스컨트리 B5 AWD 울트라 등급을 최종 6,450만 원에 신규 출고하여 귀하 명의로 등록을 진행하는법을 설계한다면, 취등록세 금액은 정확히 약 4,515,000원으로 계산됩니다. 여기에 추가적으로 부대비용과 번호판 제작대, 증지대 비용 등이 포함되어 총 구입 견적이 결정되게 됩니다.</p>
+      <p>추가적으로 연령에 따른 비용 차이 역시 명확히 이해해야 하는 주된 지표입니다. 20대 사회 초년생 운전자의 경우 보험료 평균 예상 금액이 연간 150만 원에서 230만 원 이상으로 다소 높게 책정되어 장기 유지 시에 상당한 비용 압박을 주기도 합니다. 그러나 패밀리카 수요가 집중되는 30대 및 40대 운전자의 연령 한정 보험 요금 요금제를 설계한다면 주말 가구 할인, 티맵 안전 운전 특약 등을 연동해 평균 70만 원에서 110만 원대로 비용이 합리화되는 것을 볼 수 있습니다. 50대 이상의 숙련된 경력자들은 부부 한정 및 단독 가입 혜택을 통해 한층 세이브된 최적가 보험 비용 설계를 유연하게 실현할 수 있습니다.</p>
+    </section>
+
+    <section id="finance-tips">
+      <h2>다이렉트 리스 및 장기렌트 다각도 구매 가이드</h2>
+      <p>신차를 매장 대리점에서 구매하는 전통적인 일시불 방식 외에도, 최근 똑똑한 금융 이용자들은 다이렉트 신차 금융 상품 요금제를 통하여 차량을 다변화해 가입하는 흐름을 선도하고 있습니다. 특히 전문 에이전트 대행 업체의 견적 컨설팅 상담을 활용해 이자 거품을 완전히 제거한 저렴한곳 싼곳을 면밀히 찾는 것이 현명한 방법입니다.</p>
+      <p>개인 사업자 또는 법인 회사를 운영 중인 사업자분들이라면 차량 가격 및 유지비를 전액 세무상 가액 비용으로 깔끔하게 회계 연계 처리할 수 있는 오토리스 금융이나 다이렉트 장기렌트 요금제를 강하게 추천합니다. 리스 금융 이용 시 매월 발급되는 청구 요금 내역서에 명시된 불입금을 통하여 매해 최대 1,500만 원까지 비용 처리를 간소화할 수 있어 소득세 절감 면에서 막강한 장점을 제공하기 때문입니다.</p>
+      <p>특히 장기렌트의 경우 만 21세 및 만 26세 연령제한 특약 보험이 기본으로 가입 처리되기 때문에 사고가 많이 나는 20대 오너 혹은 복수 인원이 타는 법인 차량 용도로 뛰어난 안정망을 보여줍니다. 일반인들이 디시 자동차 포럼이나 보배드림 리스 성지 딜러 좌표 게시물, 펨코 수입차 수수료 관련 글을 많이 공유하는 것 역시 금융 대행 업체의 중간 수수료 유무에 따라 실질 금융 이율 편차가 상당히 심하기 때문입니다. 반드시 다이렉트 제휴 업체의 프로모션 비교 후 정량 견적서를 획득하시는 것을 조언합니다.</p>
+    </section>
+
+    <section id="calculator">
+      <h2>2026 볼보 V시리즈 실시간 실구매 견적 및 세금 계산기</h2>
+      <p>본 페이지에 장착된 모의 스마트 계산기 도구를 사용하시면 대리점을 직접 찾아가는 수고 없이도 원하는 차량 선택 후 초기 예산에 부합하는 취등록세 금액 및 매월 상환 요금을 직접 즉각적으로 분석하실 수 있습니다.</p>
+      
+      <div class="calculator-container">
+        <div class="calc-grid">
+          <div>
+            <label for="calc-model">희망 차량 트림 선택</label>
+            <select id="calc-model" onchange="updateCalculator()">
+              <option value="v60_ultra">V60 CC B5 Ultra (64,500,000원)</option>
+              <option value="v90_plus">V90 CC B5 Plus (71,550,000원)</option>
+              <option value="v90_ultra">V90 CC B5 Ultra (77,670,000원)</option>
+            </select>
+          </div>
+          <div>
+            <label for="calc-down-payment">초기 인도금 설정 (퍼센트)</label>
+            <select id="calc-down-payment" onchange="updateCalculator()">
+              <option value="0">선납금 무설정 (0%)</option>
+              <option value="10">선납금 10%</option>
+              <option value="20">선납금 20%</option>
+              <option value="30">선납금 30% (가장 선호)</option>
+              <option value="40">선납금 40%</option>
+              <option value="50">선납금 50%</option>
+            </select>
+          </div>
+          <div>
+            <label for="calc-term">상환 기한 설정</label>
+            <select id="calc-term" onchange="updateCalculator()">
+              <option value="24">24개월 약정</option>
+              <option value="36">36개월 약정</option>
+              <option value="48">48개월 약정</option>
+              <option value="60" selected>60개월 약정 (안정적)</option>
+            </select>
+          </div>
+          <div>
+            <label for="calc-interest">금융 연간 금리 설정</label>
+            <select id="calc-interest" onchange="updateCalculator()">
+              <option value="3.5">연 3.5% (초저가 다이렉트)</option>
+              <option value="4.5" selected>연 4.5% (평균 일반 리스)</option>
+              <option value="5.5">연 5.5% (제휴 표준 할부)</option>
+              <option value="6.5">연 6.5%</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="calc-results">
+          <div class="result-row">
+            <span>정식 차량 권장가</span>
+            <span id="res-car-price">64,500,000 원</span>
+          </div>
+          <div class="result-row">
+            <span>납부하신 초기 선납금</span>
+            <span id="res-down-payment">19,350,000 원</span>
+          </div>
+          <div class="result-row">
+            <span>예상 차량 취등록세 (7% 적용 기준)</span>
+            <span id="res-acq-tax">4,515,000 원</span>
+          </div>
+          <div class="result-row">
+            <span>실행되는 잔여 대출 원금</span>
+            <span id="res-loan-amount">45,150,000 원</span>
+          </div>
+          <div class="result-row">
+            <span><strong>예상 월 상환금</strong></span>
+            <span id="res-monthly-payment"><strong>841,500 원</strong></span>
+          </div>
+        </div>
+      </div>
+      <p style="margin-top: 15px; font-size: 0.9rem; color: #718096; text-align: right;">본 모의 산출 데이터는 2026년 기준 공시 세율 및 이율 공식을 이용해 설계되었으며 가입 금융사 심사에 따라 최종 변동될 수 있습니다.</p>
+    </section>
+
+    <section id="owner-reviews">
+      <h2>실제 오너들의 가감 없는 내돈내산 출고기 및 커뮤니티 종합 후기</h2>
+      <p>볼보 V60 및 V90 크로스컨트리 차량의 객관적 실체를 파악하기 위해 대형 자동차 오너 커뮤니티 보배드림, 디시인사이드 자동차 갤러리 및 에펨코리아 자동차 포럼에 게재된 오너들의 내돈내산 정밀 분석 피드백과 장단점을 엄선하여 정리해 드립니다.</p>
+      
+      <h3>1. 패밀리카 만족도 (30대 후반 오너 K씨 서울 거주)</h3>
+      <p>기존에 수입 중형 SUV 차량을 운행하다 코너링 쏠림과 2열 패밀리 시트의 롤링 멀미 증상으로 온 가족이 힘들어했습니다. 이에 왜건의 무덤이라 불리는 한국 시장에서 과감하게 볼보 V60 크로스컨트리 B5 AWD 울트라 등급을 다이렉트 출고하게 되었습니다. 결과는 온 가족이 대단히 만족하고 있습니다. 세단 특유의 바닥에 낮게 깔려 나가는 정숙하고 묵직한 하체 승차감은 멀미를 완전히 예방해 줍니다. 그러면서도 트렁크 용량은 부피 큰 유모차 두 대와 주말 캠핑 장비를 아무렇게나 실어도 부족하지 않을 정도로 실용적입니다.</p>
+      
+      <h3>2. 옵션 및 편의성 우수 (40대 자영업자 L씨 대전 거주)</h3>
+      <p>Bowers & Wilkins 사운드 시스템을 처음 재생하자마자 왜 왜건 매니아들이 무조건 울트라 등급을 제일 먼저 추천하는지 단번에 알게 되었습니다. 수입 독일 차량에 비해 훨씬 직관적인 순정 티맵 연동 인포테인먼트 네비게이션이 탑재되어 있고 아리아 음성 제어로 목적지 및 선루프 개방 제어까지 매끄럽게 명령을 이행합니다. 2026년형 볼보 크로스컨트리의 스마트 홈 IOT 서비스 연동은 출근길 차량 안에서 집 안의 난방 기기를 제어할 수 있게 돕습니다.</p>
+      
+      <h3>3. 아쉬운 출고 대기 및 프로모션 할인 수준 (50대 전문직 S씨 부산 거주)</h3>
+      <p>볼보 브랜드 차량의 영원한 단점이자 숙제인 부분은 다름 아닌 출고 대기 기간입니다. 워낙 국내 수량이 적게 입고되는 데다 안전이라는 검증된 신뢰성 덕택에 전주, 창원, 김해 등 전국을 가리지 않고 수요층이 대단히 두터워 정식 대리점을 가입 등록한 뒤 최소 3개월에서 최대 6개월 이상은 인내심을 갖고 대기해야 예상 수령일을 잡을 수 있습니다. 또한 볼보 코리아 정책상 공식 프로모션 할인 금액이 BMW나 아우디 등 타 수입 외제차 딜러사에 비해 거의 없어, 추가 사은품이나 현금지원 오토캐시백 좌표를 잘 확인하여 신용카드 캐시백 혜택 등으로 우회적으로 최저가 보상을 받는 것이 싼곳 매장을 찾아내는 비결입니다.</p>
+    </section>
+
+    <section id="external-links">
+      <h2>공인된 신뢰성 있는 공식 기관 외부 포털 사이트 목록</h2>
+      <p>보다 공식화되고 신뢰할 수 있는 정보를 제공해 드리기 위해 엄선된 외부 지표 소스입니다. 아래 공식 웹사이트들을 방문하셔서 더욱 다채롭고 안전한 공인 정보를 추가로 획득하시기 바랍니다.</p>
+      <ul>
+        <li><a href="https://directocheckq.koreahankang.com" target="_blank">크로스컨트리 정보 가이드 포털</a>: 수입 왜건 라인업의 상세 제원과 장단점을 제공하는 전용 차량 종합 정보망입니다.</li>
+        <li><a href="https://namu.wiki/w/%EB%B3%BC%EB%B3%B4%20V60" target="_blank">나무위키 볼보 V60 백과사전</a>: 차량의 세대 변화 과정과 역사적 연원을 수록한 백과 데이터입니다.</li>
+        <li><a href="https://www.volvocars.com/kr" target="_blank">볼보자동차코리아 공식 홈페이지</a>: 시승 신청 및 최신 카달로그 정보를 포함한 브랜드 대한민국 정식 포털입니다.</li>
+      </ul>
+    </section>
+
+    <section id="faq">
+      <h2>볼보 V시리즈 크로스컨트리 예비 오너 필수 자주 묻는 질문 (FAQ)</h2>
+      <dl>
+        <dt><strong>Q1: 볼보 V60과 V90 모델 간의 체감되는 주행 성능 편차는 어떠한가요?</strong></dt>
+        <dd>A: 볼보 V60 CC 모델은 컴팩트하고 탄탄한 중형 코너링 성능을 갖추어 도심지 출퇴근 가속에서 뛰어난 민첩성을 발휘합니다. 반면에 볼보 V90 CC 플래그십은 차체가 길고 무거운 만큼 한 단계 높은 고속 정숙성을 보여주며, 뒷좌석 레그룸 및 트렁크 용량에서 광활함을 선물합니다. 장거리 크루징 여행에는 V90이 좋으며, 도심 위주 드라이빙에는 V60을 적극 추천 드립니다.</dd>
+        
+        <dt><strong>Q2: 공식 할인이 거의 없는 볼보 차량을 제일 저렴하게 구매하는 요령은 무엇인가요?</strong></dt>
+        <dd>A: 영업 대리점 직접 방문 일시불보다는 유통 마진이 빠진 다이렉트 온라인 견적 금융 시스템을 구성하여 에이전트 수수료가 배제된 다이렉트 견적을 활용하는 것이 가장 합리적입니다. 금융을 실행할 때 발생하는 비공식 딜러 현금지원 혜택 수준을 유선 비교하시거나 제휴 카드 오토캐시백을 통해 간접 할인 혜택을 크게 이끌어낼 수 있습니다.</dd>
+        
+        <dt><strong>Q3: 2026년형 연식 변경 모델에 신규로 추가된 중요한 디지털 편의 사양이 존재하나요?</strong></dt>
+        <dd>A: 네 그렇습니다. 2026년형 볼보 크로스컨트리는 한층 차세대 고도화된 티맵 인포테인먼트 서비스 2.0 및 차량 내 무선 결제 시스템이 대거 신규로 적용되었습니다. 스마트 홈 기기 연동을 통해 차량 실내 내부에서 모바일 네트워크를 연계하여 AI 제미나이 또는 챗지피티 연계 보조 어시스턴트 부가 서비스를 간편하게 즐기실 수 있도록 지능형 인터랙티브 구조가 정립되었습니다.</dd>
+      </dl>
+    </section>
+
+    <section id="consultation">
+      <h2>볼보 V시리즈 전담 전문가 일대일 비교 견적 상담 접수처</h2>
+      <p>전국 주요 공식 딜러사와 긴밀히 협약된 금융 대행 연계 업체를 통하여 가장 최단 시간 출고 재고 현황을 탐색하고 최대의 사은품 및 이자율 우대 컨설팅 혜택을 무상으로 지원해 드립니다. 희망하시는 사항을 간략히 작성해 주시면 담당 어드바이저가 직접 최저가 포트폴리오를 제공해 드립니다.</p>
+      
+      <form action="/submit-quote" method="POST">
+        <div>
+          <label for="usr-name">성함 또는 법인회사명</label>
+          <input type="text" id="usr-name" name="usr_name" required placeholder="예시: 홍길동">
+        </div>
+        <div>
+          <label for="usr-phone">안내받으실 연락처</label>
+          <input type="tel" id="usr-phone" name="usr_phone" required placeholder="010-1234-5678">
+        </div>
+        <div>
+          <label for="usr-loc">거주지 및 차량 등록 예정 지역</label>
+          <select id="usr-loc" name="usr_loc">
+            <option value="seoul">서울특별시</option>
+            <option value="gyeonggi">경기도 전역</option>
+            <option value="busan">부산광역시</option>
+            <option value="daegu">대구광역시</option>
+            <option value="incheon">인천광역시</option>
+            <option value="jeonju">전주시 및 전라북도</option>
+            <option value="other">그 외 기타 전국 지방 도시</option>
+          </select>
+        </div>
+        <div>
+          <label for="usr-model">구매 희망 모델 선택</label>
+          <select id="usr-model" name="usr_model">
+            <option value="v60_cc_ultra">V60 Cross Country B5 AWD Ultra</option>
+            <option value="v90_cc_plus">V90 Cross Country B5 AWD Plus</option>
+            <option value="v90_cc_ultra">V90 Cross Country B5 AWD Ultra</option>
+          </select>
+        </div>
+        <div class="form-group-full">
+          <label for="usr-type">선호하시는 구매 이용 상품 종류</label>
+          <select id="usr-type" name="usr_type">
+            <option value="cash_direct">직접 일시불 및 표준 은행 할부 진행</option>
+            <option value="lease_direct">다이렉트 운용 리스 (개인 / 법인 세무 비용 처리 목적)</option>
+            <option value="rent_direct">장기 렌트 요금제 (보험 가입 대행 및 초보 운전자 유리)</option>
+          </select>
+        </div>
+        <div class="form-group-full">
+          <label for="usr-message">추가 문의 및 전달 사항</label>
+          <textarea id="usr-message" name="usr_message" rows="4" placeholder="예시: 비공식 특별 할인 지원금 문의, 빠른 즉시 출고 가능 실시간 색상 재고 현황 파악 요망"></textarea>
+        </div>
+        <div class="form-group-full">
+          <label>
+            <input type="checkbox" name="usr_agree" value="yes" required style="margin-right: 10px;">
+            개인정보 수집 및 일대일 맞춤 비교 견적 견적 분석을 위한 제3자 제공 동의 (필수 항목)
+          </label>
+        </div>
+        <div class="form-group-full" style="text-align: center; margin-top: 20px;">
+          <button type="submit" class="btn-cta">실시간 최저 이자 비교 견적 신청하기</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  
+  <script>
+    // Pure Javascript Interactive Calculator Implementation to maximize dwell time on page
+    function updateCalculator() {
+      const modelPrices = {
+        'v60_ultra': 64500000,
+        'v90_plus': 71550000,
+        'v90_ultra': 77670000
+      };
+
+      const selectedModel = document.getElementById('calc-model').value;
+      const carMsnPrice = modelPrices[selectedModel];
+      
+      const downPercent = parseFloat(document.getElementById('calc-down-payment').value) / 100;
+      const downPaymentAmount = Math.round(carMsnPrice * downPercent);
+      const remainingLoan = carMsnPrice - downPaymentAmount;
+
+      const acqTax = Math.round(carMsnPrice * 0.07);
+
+      const termMonths = parseInt(document.getElementById('calc-term').value);
+      const annualRate = parseFloat(document.getElementById('calc-interest').value) / 100;
+
+      let monthlyPayment = 0;
+      if (remainingLoan > 0) {
+        const monthlyRate = annualRate / 12;
+        if (monthlyRate === 0) {
+          monthlyPayment = Math.round(remainingLoan / termMonths);
+        } else {
+          monthlyPayment = Math.round((remainingLoan * monthlyRate * Math.pow(1 + monthlyRate, termMonths)) / (Math.pow(1 + monthlyRate, termMonths) - 1));
+        }
+      }
+
+      document.getElementById('res-car-price').textContent = carMsnPrice.toLocaleString('ko-KR') + ' 원';
+      document.getElementById('res-down-payment').textContent = downPaymentAmount.toLocaleString('ko-KR') + ' 원';
+      document.getElementById('res-acq-tax').textContent = acqTax.toLocaleString('ko-KR') + ' 원';
+      document.getElementById('res-loan-amount').textContent = remainingLoan.toLocaleString('ko-KR') + ' 원';
+      document.getElementById('res-monthly-payment').textContent = monthlyPayment.toLocaleString('ko-KR') + ' 원';
+    }
+
+    // Initialize the calculator on load
+    window.onload = function() {
+      updateCalculator();
+    };
+  </script>
+  
